@@ -1,4 +1,4 @@
-# 1816번 암호
+# 1816번 암호 키
 # https://www.acmicpc.net/problem/1816
 
 
