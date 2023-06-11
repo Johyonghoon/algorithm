@@ -1,3 +1,7 @@
-arr = [[1, 2, 3]]
-ans, s, e = arr[0]
-print(ans, s, e)
+n = int(input())
+result = 0
+for i in range(2, n):
+    if n % i != 0:
+        result += i
+
+print(result)
