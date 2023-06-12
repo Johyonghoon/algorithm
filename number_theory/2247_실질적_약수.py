@@ -1,22 +1,12 @@
 # 2247번 실질적 약수
 # https://www.acmicpc.net/problem/2247
-import sys
 
-n = int(sys.stdin.readline())
-prime_number = []
+n = int(input())
 result = 0
-
-def prime_number(x):
-    for i in range(2, x):
-        if x % i == 0:
-            return False
-    return True
-
-for i in range(2, int(n**(1/2))+1):
-    if prime_number(i):
-        result += i * (n // i - 1)
-
-print(result % int(1e6))
+for i in range(2, n//2+1):
+    result += ((n // i) - 1) * i
+    result %= int(1e6)
+print(result)
 
 """
 
