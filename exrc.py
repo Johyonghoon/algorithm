@@ -1,7 +1,9 @@
-n = int(input())
-result = 0
-for i in range(2, n):
-    if n % i != 0:
-        result += i
+import numpy as np
 
-print(result)
+N = int(input())
+graph = [[0 for _ in range(N)] for _ in range(N)]
+
+print(graph)
+for i in graph:
+    print(i.count(0))
+

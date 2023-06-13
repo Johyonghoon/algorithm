@@ -1,5 +1,5 @@
-# 15649번 N과 M 1
-# https://www.acmicpc.net/problem/15649
+# 15651번 N과 M 3
+# https://www.acmicpc.net/problem/15651
 
 N, M = map(int, input().split())
 arr = []
@@ -9,8 +9,6 @@ def recur():
         print(*arr)
         return
     for i in range(1, N+1):
-        if i in arr:
-            continue
         arr.append(i)
         recur()
         arr.pop()
