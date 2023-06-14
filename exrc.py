@@ -1,9 +1,5 @@
-import numpy as np
-
-N = int(input())
-graph = [[0 for _ in range(N)] for _ in range(N)]
-
+graph = [[1], [2], [3]]
+ls = []
+ls.append(graph)
+graph = ls.pop()
 print(graph)
-for i in graph:
-    print(i.count(0))
-

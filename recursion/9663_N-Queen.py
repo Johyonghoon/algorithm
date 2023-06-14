@@ -35,7 +35,7 @@ def recur():
                 if x + j <= N - 1: graph[y + j][x + j] += 1
                 if x - j >= 0: graph[y + j][x - j] += 1
 
-            if y - j >= 0
+            if y - j >= 0:
                 if x + j <= N - 1: graph[y - j][x + j] += 1
                 if x - j >= 0: graph[y - j][x - j] += 1
 
