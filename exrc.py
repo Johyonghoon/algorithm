@@ -1,6 +1,14 @@
-import sys
+def prime_num(x):
+    if x == 1:
+        return False
+    for i in range(2, x):
+        if x % i == 0:
+            return False
+    return True
 
-input_data = sys.stdin.readline().strip()
-input_data = input_data.replace("[", "").replace("]", ""). replace(" ", "")
-ls = list(map(int, input_data.split(",")))
-print(ls)
+prime_numbers = []
+for i in range(2, 10000):
+    if prime_num(i):
+        prime_numbers.append(i)
+
+print(prime_numbers[0])

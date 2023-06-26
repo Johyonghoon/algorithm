@@ -2,6 +2,25 @@
 # https://www.acmicpc.net/problem/2609
 # Not solved
 
+def gcd(m, n):
+    if n > m:
+        m, n = n, m
+    if n == 0:
+        return m
+    if m == 0:
+        return n
+    else:
+        return gcd(n, m%n)
+
+
+A, B = map(int, input().split())
+G = gcd(A, B)
+print(G)
+print(A * B // G)
+
+
+"""
+# 시간초과
 n, m = map(int, input().split())
 small = 1
 big = n * m
@@ -35,3 +54,4 @@ for key, value in prime_factor_n.items():
 
 print(small)
 print(big // small)
+"""
