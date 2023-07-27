@@ -22,12 +22,16 @@ while True:
                             ls.pop()
                         else:
                             ls.append(word)
+                    else:
+                        ls.append(word)
                 else:
                     if ls:
                         if ls[-1] == '[':
                             ls.pop()
                         else:
                             ls.append(word)
+                    else:
+                        ls.append(word)
 
         # 반복문이 종료되었을 때 ls 가 남아있다면 균형잡히지 않은 것
         if ls:
