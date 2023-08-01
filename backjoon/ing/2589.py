@@ -1,5 +1,9 @@
 # 2589번 보물섬
 # https://www.acmicpc.net/problem/2589
+import numpy as np
+import sys
+input = sys.stdin.readline
+from collections import deque
 
 height, length = map(int, input().split())
 graph = [list(input().rstrip()) for _ in range(height)]
@@ -13,14 +17,21 @@ for y in range(height):
             # (x, y) 좌표에서 이동할 때의 최단 거리
             distance = [[0 for _ in range(length)] for _ in range(height)]
             visited = [[False for _ in range(length)] for _ in range(height)]
-            for dy, dx in [[1, 0], [-1, 0], [0, 1], [0, -1]]:
-                ey, ex = y - dy, x - dx
 
-                if 0 <= ey < height and 0 <= ex < length:
-                    if not visited[ey][ex] and graph[ey][ex] == "L":
-                        distance[ey][ex] = distance[y][x] + 1
-                        visited[ey][ex] = True
+            q = deque()
+            q.append([y, x])
 
-            result = max(result, max(map(max, distance)))
+            while q:
+                ey, ex = q.popleft()
+                visited[ey][ex] = True
+                for dy, dx in [[1, 0], [-1, 0], [0, 1], [0, -1]]:
+                    ny, nx = ey - dy, ex - dx
+
+                    if 0 <= ny < height and 0 <= nx < length:
+                        if graph[ny][nx] == "L":
+                            if not visited[ny][nx]:
+                                distance[ny][nx] = distance[ey][ex] + 1
+                                q.append([ny, nx])
+                        result = max(result, distance[ny][nx])
 
 print(result)
