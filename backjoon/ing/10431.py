@@ -5,4 +5,4 @@ input = sys.stdin.readline
 
 P = int(input())
 for _ in range(P):
-    arr = 
+    pass
