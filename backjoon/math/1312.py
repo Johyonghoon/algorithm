@@ -12,5 +12,10 @@ N : 구해야 하는 자리수
 """
 
 A, B, N = map(int, input().split())
-ls = list(str(A * (10 ** N) // B))
-print(ls[-1])
+result = 0
+
+for _ in range(N):
+    A = (A % B) * 10
+    result = A // B
+
+print(result)

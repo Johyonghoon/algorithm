@@ -1,35 +1,36 @@
 # 7696번 반복하지 않는 수
 # https://www.acmicpc.net/problem/7696
-from collections import defaultdict
 
-dp = [0 for _ in range(int(1e6)+1)]
 
 while True:
-    N = int(input())
+    n = int(input())
 
-    if N == 0:
+    # 0이 입력될 경우 종료
+    if n == 0:
         break
 
-    for idx in range(1, N+1):
-        if dp[idx] != 0:
-            continue
-
-
-    if N < 10:
-        print(N)
-        continue
-    while cnt != N:
-        ls = list(map(int, str(N // 10)))
-        print(ls)
-        for i in range(max(ls)+1):
-            cnt += 1
-            if i in ls:
-                continue
-            n += 1
-            if cnt == N:
-                print(n)
-                breaky = True
+    cnt = 0
+    i = 0
+    while True:
+        i += 1
+        s = str(i)
+        for idx in range(len(s)-1):
+            if idx + 1 >= len(s):
                 break
+            if s[idx] == s[idx+1]:
+                break
+        else:
+            cnt += 1
+            if cnt == n:
+                break
+
+    print(i)
+
+
+
+
+
+
 
 
 """
