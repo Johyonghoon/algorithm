@@ -15,36 +15,22 @@ arr = list(map(int, input().split()))
 result = [0 for _ in range(N)]  # 수신하지 않는 탑이 존재하면 0
 
 stack = []
-for idx in range(N):
-    k = 0
-    for j in stack:
-        if arr[j] < arr[idx]:
-            stack = stack[:k]
-            break
+# 0번째 인덱스는 탑에서 도달하는 곳이 없더라도 0번째 인덱스가 도달되는 영역일 수 있으므로 탐색해야 함
+for idx in range(N-1, -1, -1):
 
-        result[idx] = j+1
-        k += 1
-    """
-    # stack 첫 번째 인덱스가 가장 큰 값이므로,
-    # 그 값이 현재 탑의 높이보다 작을 경우 탐색할 필요 없음
-    # 또한, 이후의 인덱스를 탐색할 때 현재 탑을 넘어 탐색할 수 없으므로
-    # 스택 자체를 초기화 시키기
-    if stack and arr[stack[0]] < arr[idx]:
-        stack = [idx]
-        continue
-
-    for j in stack[::-1]:
-
-        if arr[j] < arr[idx]:
-            stack.pop()
-        else:
-            result[idx] = stack[-1] + 1
-            # 이미 도달하는 탑을 만났다면 종료
-            break
-    """
-    stack.append(idx)
+    # 비어 있다면 넣기
+    if not stack:
+        stack.append(idx)
+    else:
+        # 빛이 아직 도달하지 않은 탑의 정보가 stack에 쌓여 있다.
+        # 현재 탑에서 가장 가까운 stack[-1] 영역부터 판단하되,
+        # 만약 stack[-1] 보다 작은 값이라면, 그 이후의 탑은 Stack[-1]에 가려져
+        # 어차피 도달하지 않으므로 탐색하지 않는다.
+        # 이 방법으로 시간 복잡도 O(n) 가 가능해진다.
+        while stack and arr[stack[-1]] < arr[idx]:
+            result[stack.pop()] = idx+1
+        stack.append(idx)
     # print(stack)
-
 
 print(*result)
 
