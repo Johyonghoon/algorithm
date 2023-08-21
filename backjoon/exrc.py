@@ -1,6 +1,7 @@
-stack = []
+from collections import deque
 
-if stack[:0]:
-    print("1")
-else:
-    print(stack[:0])
+arr = [1, 2, 3, 4, 5]
+q = deque(arr)
+q.rotate(-2**3+1)
+print(q.popleft())
+print(q)
