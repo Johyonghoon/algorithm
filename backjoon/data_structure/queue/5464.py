@@ -19,18 +19,21 @@ for idx in range(1, M+1):
 # 주차장 빈 공간 정보
 stack = list(range(N, 0, -1))
 d = {}
+q = deque()
 total = 0
 for _ in range(2*M):
     car = int(input())
     if car > 0:
-        parking_num = stack.pop()
-        d[car] = parking_num
-        print(parking_num, car)
-        print(charge)
-        total += charge[parking_num] * weight[car]
+        q.append(car)
     else:   # car < 0
         car = -car
         stack.append(d[car])
         stack.sort(reverse=True)
+
+    while q and stack:
+        car_info = q.popleft()
+        charge_info = stack.pop()
+        d[car_info] = charge_info
+        total += weight[car_info] * charge[charge_info]
 
 print(total)
