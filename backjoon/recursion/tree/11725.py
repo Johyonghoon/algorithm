@@ -1,31 +1,35 @@
 # 11725번 트리의 부모 찾기
 # https://www.acmicpc.net/problem/11725
+
 import sys
-# 재귀의 깊이 때문에 런타임에러 발생
+# 재귀의 깊이로 인해 발생하는 런타임 에러를 방지
 sys.setrecursionlimit(10**9)
+input = sys.stdin.readline
 
 
 def recur(node, prv):
-    # 부모 정보 저장
-    prnt[node] = prv
 
-    for nxt in tree[node]:
-        # 만약 부모라면 탐색하지 않는
+    prnts[node] = prv
+
+    for nxt in edges[node]:
+        # 이전으로 다시 거슬러 올라가지 않음
         if nxt == prv:
             continue
         recur(nxt, node)
 
 
+# 정점-간선 정보 입력
 N = int(input())
-# 각 인덱스의 연결 정보를 저장
-tree = [[] for _ in range(N+1)]
-# 부모 정보 저장
-prnt = [0 for _ in range(N+1)]
+edges = [[] for _ in range(N+1)]
+prnts = [0 for _ in range(N+1)]
 for _ in range(N-1):
-    a, b = map(int, input().split())
-    # 양쪽에 연결 정보를 입력 해줘야 함
-    tree[a].append(b)
-    tree[b].append(a)
-# node 1은 root로 부모가 없으니 0으로 없음을 나타냄
+    n1, n2 = map(int, input().split())
+    # 양방향
+    edges[n1].append(n2)
+    edges[n2].append(n1)
+
+# 문제조건) root = 1, 루트는 부모가 없음
 recur(1, 0)
-[print(i) for i in prnt[2:]]
+
+# 문제조건) 2번 노드부터 부모 노드의 번호를 순서대로 출력
+[print(prnts[i]) for i in range(2, N+1)]
