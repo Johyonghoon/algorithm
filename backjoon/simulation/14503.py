@@ -32,13 +32,12 @@ while True:
         dy, dx = coordinate_d[d]
         ey = ny + dy
         ex = nx + dx
-        if 0 <= ey < M and 0 <= ex < N:
-            if graph[ey][ex] == 0:
-                ny = ey
-                nx = ex
-                print(ny, nx)
-                print(np.array(graph))
-                break
+        if graph[ey][ex] == 0:
+            ny = ey
+            nx = ex
+            # print(ny, nx)
+            # print(np.array(graph))
+            break
     # 4방향을 모두 탐색했을 때
     else:
         dy, dx = coordinate_d[d-2]
