@@ -31,27 +31,27 @@
 
 - `8/1(화) ~ 8/7(월)` [List] BOJ 29문제 출제 
 
-  - `8/1(화)`
+  - `8/1(화)` : `9명` `3.33 / 4 문제 풀이`
 
     ![1st_Aug_List_1](images/1st_Aug_List_1.png)
 
-  * `8.2.(수)`
+  * `8.2.(수)` : `11명` `2.91 / 4 문제 풀이`
 
     ![2nd_Aug_List_2](images/2nd_Aug_List_2.png)
 
-  * `8/3(목)`
+  * `8/3(목)` : `11명` `2.54 / 4 문제 풀이`
 
     ![3rd_Aug_List_3](images/3rd_Aug_List_3.png)
 
-  * `8/4(금)`
+  * `8/4(금)` : `12명` `2.75 / 4 문제 풀이`
 
     ![4th_Aug_List_4](images/4th_Aug_List_4.png)
 
-  * `8/5(토) ~ 8/6(일)`
+  * `8/5(토) ~ 8/6(일)` : `12명` `4.16 / 10 문제 풀이`
 
     ![5th_Aug_List_5](images/5th_Aug_List_5.png)
 
-  * `8/7(월)`
+  * `8/7(월)` : `12명` `2.83 / 3 문제 풀이`
 
     ![7th_Aug_List_6](images/7th_Aug_List_6.png)
 
@@ -59,11 +59,11 @@
 
 - `8/8(화) ~ 8/9(수)` [String] BOJ 8문제 출제
 
-  - `8/8(화)`
+  - `8/8(화)` : `12명` `3.33 / 4 문제 풀이`
 
     ![8th_Aug_String_1](images/8th_Aug_String_1.png)
 
-  - `8/9(수)`
+  - `8/9(수)` : `12명` `3.58 / 4 문제 풀이`
 
     ![9th_Aug_String_2](images/9th_Aug_String_2.png)
 
@@ -71,11 +71,11 @@
 
 - `8/10(목) ~ 8/11(금)` [Stack] BOJ 11문제 출제
 
-  - `8/10(목)`
+  - `8/10(목)` : `12명` `3.25 / 6 문제 풀이`
 
     ![10th_Aug_Stack_1](images/10th_Aug_Stack_1.png)
 
-  - `8/11(금)`
+  - `8/11(금)` : `12명` `4.25 / 5 문제 풀이`
 
     ![11th_Aug_Stack_2](images/11th_Aug_Stack_2.png)
 
@@ -83,11 +83,11 @@
 
 - `8/12(토) ~ 8/14(월)` [String, Stack] BOJ 15문제 출제
 
-  - `8/12(토) ~ 8/13(일)`
+  - `8/12(토) ~ 8/13(일)` : `12명` `4.5 / 11 문제 풀이`
 
     ![12th_Aug_Stack_3](images/12th_Aug_Stack_3.png)
 
-  - `8/14(월)`
+  - `8/14(월)` : `12명` `2.33 / 4 문제 풀이`
 
     ![13th_Aug_Stack_4](images/13th_Aug_Stack_4.png)
 
@@ -95,11 +95,11 @@
 
 - `8/15(화) ~ 8/17(목)` [Stack] BOJ 13문제 출제
 
-  - `8/15(화) ~ 8/16(수)`
+  - `8/15(화) ~ 8/16(수)` : `12명` `4.25 / 7 문제 풀이`
 
     ![15th_Aug_Stack_5](images/15th_Aug_Stack_5.png)
 
-  - `8/17(목)`
+  - `8/17(목)` : `12명` `2.91 / 6 문제 풀이`
 
     ![17th_Aug_Stack_6](images/17th_Aug_Stack_6.png)
 
@@ -107,7 +107,7 @@
 
 - `8/18(금)` [Queue] BOJ 6문제 출제
 
-  - `8/18(금)`
+  - `8/18(금)` : `13명` `3.31 / 6 문제 풀이`
 
     ![18th_Aug_Queue_1](images/18th_Aug_Queue_1.png)
 
@@ -115,11 +115,11 @@
 
 - `8/19(토) ~ 8/21(월)` [Stack, Queue] BOJ 18문제 출제
 
-  - `8/19(토) ~ 8/20(일)`
+  - `8/19(토) ~ 8/20(일)` : `13명` `6 / 12 문제 풀이`
 
     ![19th_Aug_Stack_Queue_1](images/19th_Aug_Stack_Queue_1.png)
 
-  - `8/21(월)`
+  - `8/21(월)` : `13명` `3.15 / 6 문제 풀이`
 
     ![21th_Aug_Stack_Queue_2](images/21th_Aug_Stack_Queue_2.png)
 
@@ -127,11 +127,11 @@
 
 - `8/22(화) ~ 8/23(수)` [Tree] BOJ 8문제 출제
 
-  - `8/22(화)`
+  - `8/22(화)` : `13명` `2.78 / 4 문제 풀이`
 
     ![22th_Aug_Tree_1](images/22th_Aug_Tree_1.png)
 
-  - `8/23(수)`
+  - `8/23(수)` : `13명` `2.54 / 4 문제 풀이`
 
     ![23th_Aug_Tree_2](images/23th_Aug_Tree_2.png)
 
@@ -139,11 +139,11 @@
 
 - `8/24(목) ~ 8/28(월)` [삼성 SW 역량테스트 IM형 대비] BOJ 26문제 출제
 
-  - `8/24(목) ~ 8/27(일)`
+  - `8/24(목) ~ 8/27(일)` : `13명` `11.38 / 20 문제 풀이`
 
     ![24th_IM_Exercise_1](images/24th_IM_Exercise_1.png)
 
-  - `8/28(월)`
+  - `8/28(월)` : `13명` `4.46 / 6 문제 풀이`
 
     ![28th_IM_Exercise_2](images/28th_IM_Exercise_2.png)
 
@@ -151,11 +151,11 @@
 
 - `8/29(화) ~ 8/30(수)` [Simulation] BOJ 11문제 출제
 
-  - `8/29(화)`
+  - `8/29(화)` : `13명` `3.15 / 4 문제 풀이`
 
     ![29th_Simulation_1](images/29th_Simulation_1.png)
 
-  - `8/30(수)`
+  - `8/30(수)` : `14명` `2.29 / 4 문제 풀이`
 
     ![30th_Simulation_2](images/30th_Simulation_2.png)
 
@@ -163,7 +163,7 @@
 
 - `8/31(목)` : [Brute Force] BOJ 5문제 출제
 
-  - `8/31(목)`
+  - `8/31(목)` : `14명` `1.86 / 4 문제 풀이`
 
     ![31th_Brute_Force_1](images/31th_Brute_Force_1.png)
 
@@ -205,7 +205,7 @@
 
 ![Aug_2023_BOJ_HJS](images/Aug_2023_BOJ_HJS.png)
 
-###### 권원영 (8/2 합류)
+###### 권원영 (8/1 합류)
 
 ![Aug_2023_BOJ_KWY](images/Aug_2023_BOJ_KWY.png)
 
