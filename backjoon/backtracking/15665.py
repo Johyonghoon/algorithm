@@ -3,7 +3,7 @@
 
 """
 중복된 숫자가 input 으로 들어 오는 문제
-사용했던 인덱스의 숫자는 다시 사용하면 안된다.
+사용 했던 인덱스의 숫자를 다시 사용 해도 되는 문제
 하지만, 출력 하는 수열은 중복 되면 안됨
 예를 들어, 9 7 9 1의 수열이 있다면, dfs 를 통해 완전 탐색 했을 때 [9, 7] 의 수열이 2번 나오게 된다.
 """
@@ -23,8 +23,6 @@ def recur(cnt, arr):
         return
 
     for idx in range(N):
-        if idx in arr:
-            continue
         recur(cnt+1, arr + [idx])
 
 

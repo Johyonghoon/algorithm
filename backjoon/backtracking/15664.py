@@ -1,9 +1,8 @@
-# 15665번 N과 M 11
-# https://www.acmicpc.net/problem/15665
+# 15664번 N과 M 10
+# https://www.acmicpc.net/problem/15664
 
 """
 중복된 숫자가 input 으로 들어 오는 문제
-사용했던 인덱스의 숫자는 다시 사용하면 안된다.
 하지만, 출력 하는 수열은 중복 되면 안됨
 예를 들어, 9 7 9 1의 수열이 있다면, dfs 를 통해 완전 탐색 했을 때 [9, 7] 의 수열이 2번 나오게 된다.
 """
@@ -25,6 +24,8 @@ def recur(cnt, arr):
     for idx in range(N):
         if idx in arr:
             continue
+        if arr and numbers[arr[-1]] > numbers[idx]:
+            continue
         recur(cnt+1, arr + [idx])
 
 
@@ -37,7 +38,7 @@ recur(0, [])
 # set 자료구조는 순서가 없으므로, 리스트로 변경 후 정렬하여 출력
 result = list(result)
 
-# 문자열 상태에서 정렬하면 안되는 이유 >> ../data_structure/string/string_num_sort.py 참고
+# 문자열 상태에서 정렬하면 안돼?
 ans = []
 for str_num in result:
     ans.append(list(map(int, str_num.split())))
