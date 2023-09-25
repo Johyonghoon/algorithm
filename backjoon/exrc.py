@@ -1,6 +1,12 @@
-from collections import deque
+import sys
 
-arr = [1, 2, 3, 4, 5]
-q = deque(arr)
-q.rotate(-1)
-print(q)
+graph = {
+    'A': {'B': 1, 'C': 4},
+    'B': {'A': 1, 'C': 2, 'D': 5},
+    'C': {'A': 4, 'B': 2, 'D': 1},
+    'D': {'B': 5, 'C': 1}
+}
+
+
+shortest_distances = {node: sys.maxsize for node in graph}
+print(shortest_distances)
