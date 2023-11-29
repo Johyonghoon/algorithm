@@ -17,7 +17,7 @@ for _ in range(N):
         if string[i] not in target:
             target[string[i]] = dict()
         target = target[string[i]]
-    # print(tri)
+    # print(trie)
 
 result = 0
 for _ in range(M):
